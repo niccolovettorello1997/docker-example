@@ -10,6 +10,7 @@ COPY requirements.txt .
 # Install requirements
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Copy source code from local machine to container
 COPY . .
 
 # Espose port to communicate
